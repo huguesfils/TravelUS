@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0BEB182BA0D72A00E38EDA /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */; };
+		BB0BEB1A2BA0E1FB00E38EDA /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */; };
+		BB86F1CB2B9A0A8600F0D087 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */; };
+		BB896F612B9F5DD60035D78D /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */; };
+		BB896F682B9F91240035D78D /* HideKeybordViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */; };
+		BB90C27F2B8E024B008A7286 /* AnAmericanDreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C27E2B8E024B008A7286 /* AnAmericanDreamApp.swift */; };
+		BB90C2812B8E024B008A7286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2802B8E024B008A7286 /* ContentView.swift */; };
+		BB90C2832B8E024C008A7286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90C2822B8E024C008A7286 /* Assets.xcassets */; };
+		BB90C2872B8E024C008A7286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90C2862B8E024C008A7286 /* Preview Assets.xcassets */; };
+		BB90C2912B8E024C008A7286 /* AnAmericanDreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2902B8E024C008A7286 /* AnAmericanDreamTests.swift */; };
+		BB90C2AB2B8E25F4008A7286 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2AA2B8E25F4008A7286 /* TabBarView.swift */; };
+		BB90C2B02B8E3661008A7286 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2AF2B8E3661008A7286 /* TranslateView.swift */; };
+		BB90C2B72B8E37B6008A7286 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2B62B8E37B6008A7286 /* CurrencyView.swift */; };
+		BB90C2BC2B8E386A008A7286 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2BB2B8E386A008A7286 /* TipView.swift */; };
+		BB90C2BE2B8E4EDA008A7286 /* DividerWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2BD2B8E4EDA008A7286 /* DividerWithButtonView.swift */; };
+		BBA9A4392B98D76600E375EC /* TextFieldSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */; };
+		BBC42FB92B97808700FA4321 /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */; };
+		BBC42FBD2B978D0700FA4321 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FBC2B978D0700FA4321 /* TranslationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB90C28D2B8E024C008A7286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB90C2732B8E024B008A7286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB90C27A2B8E024B008A7286;
+			remoteInfo = AnAmericanDream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
+		BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		BB896F622B9F605F0035D78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeybordViewExtension.swift; sourceTree = "<group>"; };
+		BB90C27B2B8E024B008A7286 /* AnAmericanDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnAmericanDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB90C27E2B8E024B008A7286 /* AnAmericanDreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnAmericanDreamApp.swift; sourceTree = "<group>"; };
+		BB90C2802B8E024B008A7286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB90C2822B8E024C008A7286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB90C2842B8E024C008A7286 /* AnAmericanDream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnAmericanDream.entitlements; sourceTree = "<group>"; };
+		BB90C2862B8E024C008A7286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB90C28C2B8E024C008A7286 /* AnAmericanDreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnAmericanDreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB90C2902B8E024C008A7286 /* AnAmericanDreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnAmericanDreamTests.swift; sourceTree = "<group>"; };
+		BB90C2AA2B8E25F4008A7286 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		BB90C2AF2B8E3661008A7286 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		BB90C2B62B8E37B6008A7286 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		BB90C2BB2B8E386A008A7286 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		BB90C2BD2B8E4EDA008A7286 /* DividerWithButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerWithButtonView.swift; sourceTree = "<group>"; };
+		BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSectionView.swift; sourceTree = "<group>"; };
+		BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
+		BBC42FBC2B978D0700FA4321 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB90C2782B8E024B008A7286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB90C2892B8E024C008A7286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB90C2722B8E024B008A7286 = {
+			isa = PBXGroup;
+			children = (
+				BB90C27D2B8E024B008A7286 /* AnAmericanDream */,
+				BB90C28F2B8E024C008A7286 /* AnAmericanDreamTests */,
+				BB90C27C2B8E024B008A7286 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB90C27C2B8E024B008A7286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C27B2B8E024B008A7286 /* AnAmericanDream.app */,
+				BB90C28C2B8E024C008A7286 /* AnAmericanDreamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB90C27D2B8E024B008A7286 /* AnAmericanDream */ = {
+			isa = PBXGroup;
+			children = (
+				BB896F622B9F605F0035D78D /* Info.plist */,
+				BB90C2B22B8E36B6008A7286 /* App */,
+				BB90C2A92B8E25DB008A7286 /* Root */,
+				BB90C2AC2B8E362F008A7286 /* Core */,
+				BB90C2822B8E024C008A7286 /* Assets.xcassets */,
+				BB90C2842B8E024C008A7286 /* AnAmericanDream.entitlements */,
+				BB90C2852B8E024C008A7286 /* Preview Content */,
+			);
+			path = AnAmericanDream;
+			sourceTree = "<group>";
+		};
+		BB90C2852B8E024C008A7286 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2862B8E024C008A7286 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB90C28F2B8E024C008A7286 /* AnAmericanDreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2902B8E024C008A7286 /* AnAmericanDreamTests.swift */,
+			);
+			path = AnAmericanDreamTests;
+			sourceTree = "<group>";
+		};
+		BB90C2A92B8E25DB008A7286 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2802B8E024B008A7286 /* ContentView.swift */,
+				BB90C2AA2B8E25F4008A7286 /* TabBarView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BB90C2AC2B8E362F008A7286 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2AD2B8E363D008A7286 /* Translate */,
+				BB90C2B32B8E3793008A7286 /* Currency */,
+				BB90C2B82B8E3854008A7286 /* Tip */,
+				BBC42FBB2B978CE500FA4321 /* Model */,
+				BBC42FBA2B97828F00FA4321 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BB90C2AD2B8E363D008A7286 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2AE2B8E3652008A7286 /* View */,
+				BB90C2B12B8E368F008A7286 /* ViewModel */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		BB90C2AE2B8E3652008A7286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2AF2B8E3661008A7286 /* TranslateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB90C2B12B8E368F008A7286 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB90C2B22B8E36B6008A7286 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C27E2B8E024B008A7286 /* AnAmericanDreamApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BB90C2B32B8E3793008A7286 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2B42B8E379C008A7286 /* View */,
+				BB90C2B52B8E37A1008A7286 /* ViewModel */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		BB90C2B42B8E379C008A7286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2B62B8E37B6008A7286 /* CurrencyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB90C2B52B8E37A1008A7286 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB90C2B82B8E3854008A7286 /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2BA2B8E3861008A7286 /* View */,
+				BB90C2B92B8E385B008A7286 /* ViewModel */,
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
+		BB90C2B92B8E385B008A7286 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB90C2BA2B8E3861008A7286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2BB2B8E386A008A7286 /* TipView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BBC42FBA2B97828F00FA4321 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2BD2B8E4EDA008A7286 /* DividerWithButtonView.swift */,
+				BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */,
+				BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BBC42FBB2B978CE500FA4321 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */,
+				BBC42FBC2B978D0700FA4321 /* TranslationService.swift */,
+				BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB90C27A2B8E024B008A7286 /* AnAmericanDream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB90C2A02B8E024C008A7286 /* Build configuration list for PBXNativeTarget "AnAmericanDream" */;
+			buildPhases = (
+				BB90C2772B8E024B008A7286 /* Sources */,
+				BB90C2782B8E024B008A7286 /* Frameworks */,
+				BB90C2792B8E024B008A7286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnAmericanDream;
+			productName = AnAmericanDream;
+			productReference = BB90C27B2B8E024B008A7286 /* AnAmericanDream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB90C28B2B8E024C008A7286 /* AnAmericanDreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB90C2A32B8E024C008A7286 /* Build configuration list for PBXNativeTarget "AnAmericanDreamTests" */;
+			buildPhases = (
+				BB90C2882B8E024C008A7286 /* Sources */,
+				BB90C2892B8E024C008A7286 /* Frameworks */,
+				BB90C28A2B8E024C008A7286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB90C28E2B8E024C008A7286 /* PBXTargetDependency */,
+			);
+			name = AnAmericanDreamTests;
+			productName = AnAmericanDreamTests;
+			productReference = BB90C28C2B8E024C008A7286 /* AnAmericanDreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB90C2732B8E024B008A7286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					BB90C27A2B8E024B008A7286 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					BB90C28B2B8E024C008A7286 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BB90C27A2B8E024B008A7286;
+					};
+				};
+			};
+			buildConfigurationList = BB90C2762B8E024B008A7286 /* Build configuration list for PBXProject "AnAmericanDream" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB90C2722B8E024B008A7286;
+			productRefGroup = BB90C27C2B8E024B008A7286 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB90C27A2B8E024B008A7286 /* AnAmericanDream */,
+				BB90C28B2B8E024C008A7286 /* AnAmericanDreamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB90C2792B8E024B008A7286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB90C2872B8E024C008A7286 /* Preview Assets.xcassets in Resources */,
+				BB90C2832B8E024C008A7286 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB90C28A2B8E024C008A7286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB90C2772B8E024B008A7286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0BEB182BA0D72A00E38EDA /* TipViewModel.swift in Sources */,
+				BB90C2812B8E024B008A7286 /* ContentView.swift in Sources */,
+				BB896F612B9F5DD60035D78D /* CurrencyViewModel.swift in Sources */,
+				BB90C2BE2B8E4EDA008A7286 /* DividerWithButtonView.swift in Sources */,
+				BB90C2B72B8E37B6008A7286 /* CurrencyView.swift in Sources */,
+				BB896F682B9F91240035D78D /* HideKeybordViewExtension.swift in Sources */,
+				BB90C2BC2B8E386A008A7286 /* TipView.swift in Sources */,
+				BBA9A4392B98D76600E375EC /* TextFieldSectionView.swift in Sources */,
+				BB86F1CB2B9A0A8600F0D087 /* CurrencyService.swift in Sources */,
+				BB90C2AB2B8E25F4008A7286 /* TabBarView.swift in Sources */,
+				BBC42FB92B97808700FA4321 /* TranslateViewModel.swift in Sources */,
+				BB90C27F2B8E024B008A7286 /* AnAmericanDreamApp.swift in Sources */,
+				BBC42FBD2B978D0700FA4321 /* TranslationService.swift in Sources */,
+				BB90C2B02B8E3661008A7286 /* TranslateView.swift in Sources */,
+				BB0BEB1A2BA0E1FB00E38EDA /* ApiKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB90C2882B8E024C008A7286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB90C2912B8E024C008A7286 /* AnAmericanDreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB90C28E2B8E024C008A7286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB90C27A2B8E024B008A7286 /* AnAmericanDream */;
+			targetProxy = BB90C28D2B8E024C008A7286 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB90C29E2B8E024C008A7286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB90C29F2B8E024C008A7286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BB90C2A12B8E024C008A7286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = AnAmericanDream/AnAmericanDream.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AnAmericanDream/Preview Content\"";
+				DEVELOPMENT_TEAM = RT62BPUMZ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnAmericanDream/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TravelUS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BB90C2A22B8E024C008A7286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = AnAmericanDream/AnAmericanDream.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AnAmericanDream/Preview Content\"";
+				DEVELOPMENT_TEAM = RT62BPUMZ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnAmericanDream/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TravelUS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BB90C2A42B8E024C008A7286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = RT62BPUMZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnAmericanDream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnAmericanDream";
+			};
+			name = Debug;
+		};
+		BB90C2A52B8E024C008A7286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = RT62BPUMZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnAmericanDream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnAmericanDream";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB90C2762B8E024B008A7286 /* Build configuration list for PBXProject "AnAmericanDream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB90C29E2B8E024C008A7286 /* Debug */,
+				BB90C29F2B8E024C008A7286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB90C2A02B8E024C008A7286 /* Build configuration list for PBXNativeTarget "AnAmericanDream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB90C2A12B8E024C008A7286 /* Debug */,
+				BB90C2A22B8E024C008A7286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB90C2A32B8E024C008A7286 /* Build configuration list for PBXNativeTarget "AnAmericanDreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB90C2A42B8E024C008A7286 /* Debug */,
+				BB90C2A52B8E024C008A7286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB90C2732B8E024B008A7286 /* Project object */;
+}
