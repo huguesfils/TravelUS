@@ -42,7 +42,6 @@
 		BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
-		BB896F622B9F605F0035D78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeybordViewExtension.swift; sourceTree = "<group>"; };
 		BB90C27B2B8E024B008A7286 /* TravelUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB90C27E2B8E024B008A7286 /* TravelUSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelUSApp.swift; sourceTree = "<group>"; };
@@ -101,7 +100,6 @@
 		BB90C27D2B8E024B008A7286 /* TravelUS */ = {
 			isa = PBXGroup;
 			children = (
-				BB896F622B9F605F0035D78D /* Info.plist */,
 				BB90C2B22B8E36B6008A7286 /* App */,
 				BB90C2A92B8E25DB008A7286 /* Root */,
 				BB90C2AC2B8E362F008A7286 /* Core */,
@@ -511,16 +509,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = AnAmericanDream/AnAmericanDream.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TravelUS/TravelUS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"AnAmericanDream/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TravelUS/Preview Content\"";
 				DEVELOPMENT_TEAM = RT62BPUMZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnAmericanDream/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TravelUS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -538,7 +535,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDream;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.TravelUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -555,16 +552,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = AnAmericanDream/AnAmericanDream.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TravelUS/TravelUS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"AnAmericanDream/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TravelUS/Preview Content\"";
 				DEVELOPMENT_TEAM = RT62BPUMZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnAmericanDream/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TravelUS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -582,7 +578,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDream;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.TravelUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
