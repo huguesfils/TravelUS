@@ -16,7 +16,7 @@
 		BB90C2812B8E024B008A7286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2802B8E024B008A7286 /* ContentView.swift */; };
 		BB90C2832B8E024C008A7286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90C2822B8E024C008A7286 /* Assets.xcassets */; };
 		BB90C2872B8E024C008A7286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90C2862B8E024C008A7286 /* Preview Assets.xcassets */; };
-		BB90C2912B8E024C008A7286 /* TravelUSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2902B8E024C008A7286 /* TravelUSTests.swift */; };
+		BB90C2912B8E024C008A7286 /* ClassCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2902B8E024C008A7286 /* ClassCurrencyTests.swift */; };
 		BB90C2AB2B8E25F4008A7286 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2AA2B8E25F4008A7286 /* TabBarView.swift */; };
 		BB90C2B02B8E3661008A7286 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2AF2B8E3661008A7286 /* TranslateView.swift */; };
 		BB90C2B72B8E37B6008A7286 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2B62B8E37B6008A7286 /* CurrencyView.swift */; };
@@ -25,6 +25,10 @@
 		BBA9A4392B98D76600E375EC /* TextFieldSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */; };
 		BBC42FB92B97808700FA4321 /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */; };
 		BBC42FBD2B978D0700FA4321 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FBC2B978D0700FA4321 /* TranslationService.swift */; };
+		BBD4F54E2BA2063C008BCB61 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = BBD4F54D2BA2063C008BCB61 /* Currency.json */; };
+		BBD4F5522BA20A75008BCB61 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4F5512BA20A75008BCB61 /* URLSessionFake.swift */; };
+		BBD4F5562BA20C95008BCB61 /* Translation.json in Resources */ = {isa = PBXBuildFile; fileRef = BBD4F5552BA20C95008BCB61 /* Translation.json */; };
+		BBD4F5582BA20CA2008BCB61 /* TranslationServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4F5572BA20CA2008BCB61 /* TranslationServiceTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +54,7 @@
 		BB90C2842B8E024C008A7286 /* TravelUS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravelUS.entitlements; sourceTree = "<group>"; };
 		BB90C2862B8E024C008A7286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB90C28C2B8E024C008A7286 /* TravelUSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelUSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB90C2902B8E024C008A7286 /* TravelUSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelUSTests.swift; sourceTree = "<group>"; };
+		BB90C2902B8E024C008A7286 /* ClassCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCurrencyTests.swift; sourceTree = "<group>"; };
 		BB90C2AA2B8E25F4008A7286 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		BB90C2AF2B8E3661008A7286 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 		BB90C2B62B8E37B6008A7286 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,10 @@
 		BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
 		BBC42FBC2B978D0700FA4321 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 		BBD4F5472BA1FCF0008BCB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD4F54D2BA2063C008BCB61 /* Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Currency.json; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Currency.json"; sourceTree = "<group>"; };
+		BBD4F5512BA20A75008BCB61 /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSessionFake.swift; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/URLSessionFake.swift"; sourceTree = "<group>"; };
+		BBD4F5552BA20C95008BCB61 /* Translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Translation.json; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Translation.json"; sourceTree = "<group>"; };
+		BBD4F5572BA20CA2008BCB61 /* TranslationServiceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationServiceTestCase.swift; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/TranslationServiceTestCase.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +131,11 @@
 		BB90C28F2B8E024C008A7286 /* TravelUSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB90C2902B8E024C008A7286 /* TravelUSTests.swift */,
+				BBD4F5552BA20C95008BCB61 /* Translation.json */,
+				BBD4F54D2BA2063C008BCB61 /* Currency.json */,
+				BBD4F5512BA20A75008BCB61 /* URLSessionFake.swift */,
+				BB90C2902B8E024C008A7286 /* ClassCurrencyTests.swift */,
+				BBD4F5572BA20CA2008BCB61 /* TranslationServiceTestCase.swift */,
 			);
 			path = TravelUSTests;
 			sourceTree = "<group>";
@@ -350,6 +362,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD4F54E2BA2063C008BCB61 /* Currency.json in Resources */,
+				BBD4F5562BA20C95008BCB61 /* Translation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +396,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB90C2912B8E024C008A7286 /* TravelUSTests.swift in Sources */,
+				BBD4F5522BA20A75008BCB61 /* URLSessionFake.swift in Sources */,
+				BBD4F5582BA20CA2008BCB61 /* TranslationServiceTestCase.swift in Sources */,
+				BB90C2912B8E024C008A7286 /* ClassCurrencyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,10 +633,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDreamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelUS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelUS";
 			};
 			name = Debug;
@@ -641,10 +658,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huguesfils.AnAmericanDreamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelUS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelUS";
 			};
 			name = Release;

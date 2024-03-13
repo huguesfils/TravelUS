@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct DividerWithButtonView: View {
-    @Binding var isRotated: Bool  // Utiliser Binding pour l'état de rotation
+    @Binding var isRotated: Bool
     let color: Color
     var action: () -> Void
     
     init(color: Color = .skyBlue, isRotated: Binding<Bool>, action: @escaping () -> Void) {
         self.color = color
-        self._isRotated = isRotated  // Notez l'utilisation de _ pour le binding
+        self._isRotated = isRotated
         self.action = action
     }
     
