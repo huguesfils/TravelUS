@@ -59,6 +59,7 @@
 		BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSectionView.swift; sourceTree = "<group>"; };
 		BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
 		BBC42FBC2B978D0700FA4321 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		BBD4F5472BA1FCF0008BCB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +101,11 @@
 		BB90C27D2B8E024B008A7286 /* TravelUS */ = {
 			isa = PBXGroup;
 			children = (
+				BBD4F5472BA1FCF0008BCB61 /* Info.plist */,
+				BBD4F5482BA1FEB3008BCB61 /* SupportingFiles */,
 				BB90C2B22B8E36B6008A7286 /* App */,
 				BB90C2A92B8E25DB008A7286 /* Root */,
 				BB90C2AC2B8E362F008A7286 /* Core */,
-				BB90C2822B8E024C008A7286 /* Assets.xcassets */,
 				BB90C2842B8E024C008A7286 /* TravelUS.entitlements */,
 				BB90C2852B8E024C008A7286 /* Preview Content */,
 			);
@@ -248,6 +250,14 @@
 				BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BBD4F5482BA1FEB3008BCB61 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2822B8E024C008A7286 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +528,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelUS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TravelUS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -561,6 +572,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelUS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TravelUS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
