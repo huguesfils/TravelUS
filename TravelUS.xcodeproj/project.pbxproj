@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BB0BEB182BA0D72A00E38EDA /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */; };
 		BB0BEB1A2BA0E1FB00E38EDA /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */; };
+		BB7091622BA34DC400F044F2 /* TranslationServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7091612BA34DC400F044F2 /* TranslationServiceTestCase.swift */; };
+		BB7091662BA34DE600F044F2 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7091632BA34DE600F044F2 /* Currency.json */; };
+		BB7091672BA34DE600F044F2 /* Translation.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7091642BA34DE600F044F2 /* Translation.json */; };
+		BB7091682BA34DE600F044F2 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7091652BA34DE600F044F2 /* URLSessionFake.swift */; };
 		BB86F1CB2B9A0A8600F0D087 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */; };
 		BB896F612B9F5DD60035D78D /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */; };
 		BB896F682B9F91240035D78D /* HideKeybordViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */; };
@@ -25,10 +29,6 @@
 		BBA9A4392B98D76600E375EC /* TextFieldSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */; };
 		BBC42FB92B97808700FA4321 /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */; };
 		BBC42FBD2B978D0700FA4321 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FBC2B978D0700FA4321 /* TranslationService.swift */; };
-		BBD4F54E2BA2063C008BCB61 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = BBD4F54D2BA2063C008BCB61 /* Currency.json */; };
-		BBD4F5522BA20A75008BCB61 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4F5512BA20A75008BCB61 /* URLSessionFake.swift */; };
-		BBD4F5562BA20C95008BCB61 /* Translation.json in Resources */ = {isa = PBXBuildFile; fileRef = BBD4F5552BA20C95008BCB61 /* Translation.json */; };
-		BBD4F5582BA20CA2008BCB61 /* TranslationServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4F5572BA20CA2008BCB61 /* TranslationServiceTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,10 @@
 /* Begin PBXFileReference section */
 		BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
 		BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		BB7091612BA34DC400F044F2 /* TranslationServiceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationServiceTestCase.swift; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/TranslationServiceTestCase.swift"; sourceTree = "<group>"; };
+		BB7091632BA34DE600F044F2 /* Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Currency.json; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Currency.json"; sourceTree = "<group>"; };
+		BB7091642BA34DE600F044F2 /* Translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Translation.json; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Translation.json"; sourceTree = "<group>"; };
+		BB7091652BA34DE600F044F2 /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSessionFake.swift; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/URLSessionFake.swift"; sourceTree = "<group>"; };
 		BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeybordViewExtension.swift; sourceTree = "<group>"; };
@@ -64,10 +68,6 @@
 		BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
 		BBC42FBC2B978D0700FA4321 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 		BBD4F5472BA1FCF0008BCB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBD4F54D2BA2063C008BCB61 /* Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Currency.json; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Currency.json"; sourceTree = "<group>"; };
-		BBD4F5512BA20A75008BCB61 /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSessionFake.swift; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/URLSessionFake.swift"; sourceTree = "<group>"; };
-		BBD4F5552BA20C95008BCB61 /* Translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Translation.json; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Translation.json"; sourceTree = "<group>"; };
-		BBD4F5572BA20CA2008BCB61 /* TranslationServiceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationServiceTestCase.swift; path = "../../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/TranslationServiceTestCase.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,11 +131,11 @@
 		BB90C28F2B8E024C008A7286 /* TravelUSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BBD4F5552BA20C95008BCB61 /* Translation.json */,
-				BBD4F54D2BA2063C008BCB61 /* Currency.json */,
-				BBD4F5512BA20A75008BCB61 /* URLSessionFake.swift */,
+				BB7091642BA34DE600F044F2 /* Translation.json */,
+				BB7091632BA34DE600F044F2 /* Currency.json */,
+				BB7091652BA34DE600F044F2 /* URLSessionFake.swift */,
 				BB90C2902B8E024C008A7286 /* ClassCurrencyTests.swift */,
-				BBD4F5572BA20CA2008BCB61 /* TranslationServiceTestCase.swift */,
+				BB7091612BA34DC400F044F2 /* TranslationServiceTestCase.swift */,
 			);
 			path = TravelUSTests;
 			sourceTree = "<group>";
@@ -362,8 +362,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD4F54E2BA2063C008BCB61 /* Currency.json in Resources */,
-				BBD4F5562BA20C95008BCB61 /* Translation.json in Resources */,
+				BB7091662BA34DE600F044F2 /* Currency.json in Resources */,
+				BB7091672BA34DE600F044F2 /* Translation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD4F5522BA20A75008BCB61 /* URLSessionFake.swift in Sources */,
-				BBD4F5582BA20CA2008BCB61 /* TranslationServiceTestCase.swift in Sources */,
+				BB7091682BA34DE600F044F2 /* URLSessionFake.swift in Sources */,
+				BB7091622BA34DC400F044F2 /* TranslationServiceTestCase.swift in Sources */,
 				BB90C2912B8E024C008A7286 /* ClassCurrencyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
