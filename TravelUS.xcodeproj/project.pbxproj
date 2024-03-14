@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		BB0BEB182BA0D72A00E38EDA /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */; };
 		BB0BEB1A2BA0E1FB00E38EDA /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */; };
-		BB7091622BA34DC400F044F2 /* TranslationServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7091612BA34DC400F044F2 /* TranslationServiceTestCase.swift */; };
-		BB7091662BA34DE600F044F2 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7091632BA34DE600F044F2 /* Currency.json */; };
-		BB7091672BA34DE600F044F2 /* Translation.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7091642BA34DE600F044F2 /* Translation.json */; };
-		BB7091682BA34DE600F044F2 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7091652BA34DE600F044F2 /* URLSessionFake.swift */; };
+		BB70916D2BA34F1F00F044F2 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7091692BA34F1F00F044F2 /* URLSessionFake.swift */; };
+		BB70916E2BA34F1F00F044F2 /* Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = BB70916A2BA34F1F00F044F2 /* Currency.json */; };
+		BB70916F2BA34F1F00F044F2 /* Translation.json in Resources */ = {isa = PBXBuildFile; fileRef = BB70916B2BA34F1F00F044F2 /* Translation.json */; };
+		BB7091702BA34F1F00F044F2 /* TranslationServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70916C2BA34F1F00F044F2 /* TranslationServiceTestCase.swift */; };
 		BB86F1CB2B9A0A8600F0D087 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */; };
 		BB896F612B9F5DD60035D78D /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */; };
 		BB896F682B9F91240035D78D /* HideKeybordViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */; };
@@ -44,10 +44,10 @@
 /* Begin PBXFileReference section */
 		BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
 		BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
-		BB7091612BA34DC400F044F2 /* TranslationServiceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationServiceTestCase.swift; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/TranslationServiceTestCase.swift"; sourceTree = "<group>"; };
-		BB7091632BA34DE600F044F2 /* Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Currency.json; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Currency.json"; sourceTree = "<group>"; };
-		BB7091642BA34DE600F044F2 /* Translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Translation.json; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/Translation.json"; sourceTree = "<group>"; };
-		BB7091652BA34DE600F044F2 /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSessionFake.swift; path = "../../../../Downloads/AnAmericanDream-master/AnAmericanDreamTests/URLSessionFake.swift"; sourceTree = "<group>"; };
+		BB7091692BA34F1F00F044F2 /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
+		BB70916A2BA34F1F00F044F2 /* Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Currency.json; sourceTree = "<group>"; };
+		BB70916B2BA34F1F00F044F2 /* Translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Translation.json; sourceTree = "<group>"; };
+		BB70916C2BA34F1F00F044F2 /* TranslationServiceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationServiceTestCase.swift; sourceTree = "<group>"; };
 		BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeybordViewExtension.swift; sourceTree = "<group>"; };
@@ -131,11 +131,11 @@
 		BB90C28F2B8E024C008A7286 /* TravelUSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB7091642BA34DE600F044F2 /* Translation.json */,
-				BB7091632BA34DE600F044F2 /* Currency.json */,
-				BB7091652BA34DE600F044F2 /* URLSessionFake.swift */,
 				BB90C2902B8E024C008A7286 /* ClassCurrencyTests.swift */,
-				BB7091612BA34DC400F044F2 /* TranslationServiceTestCase.swift */,
+				BB70916A2BA34F1F00F044F2 /* Currency.json */,
+				BB70916B2BA34F1F00F044F2 /* Translation.json */,
+				BB70916C2BA34F1F00F044F2 /* TranslationServiceTestCase.swift */,
+				BB7091692BA34F1F00F044F2 /* URLSessionFake.swift */,
 			);
 			path = TravelUSTests;
 			sourceTree = "<group>";
@@ -362,8 +362,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB7091662BA34DE600F044F2 /* Currency.json in Resources */,
-				BB7091672BA34DE600F044F2 /* Translation.json in Resources */,
+				BB70916E2BA34F1F00F044F2 /* Currency.json in Resources */,
+				BB70916F2BA34F1F00F044F2 /* Translation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,9 +396,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB7091682BA34DE600F044F2 /* URLSessionFake.swift in Sources */,
-				BB7091622BA34DC400F044F2 /* TranslationServiceTestCase.swift in Sources */,
 				BB90C2912B8E024C008A7286 /* ClassCurrencyTests.swift in Sources */,
+				BB7091702BA34F1F00F044F2 /* TranslationServiceTestCase.swift in Sources */,
+				BB70916D2BA34F1F00F044F2 /* URLSessionFake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
