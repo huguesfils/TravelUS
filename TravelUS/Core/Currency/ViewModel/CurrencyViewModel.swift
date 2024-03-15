@@ -27,6 +27,12 @@ class CurrencyViewModel: ObservableObject {
         setupCurrencyConversionBindings() // Setup data bindings
     }
     
+    // Ensures that the numerical inputs conform to a standard format that uses a period (.) as the decimal separator.
+    func formatInput() {
+        amountInDollars = amountInDollars.replacingOccurrences(of: ",", with: ".")
+        amountInEuros = amountInEuros.replacingOccurrences(of: ",", with: ".")
+    }
+    
     // Clears the input amounts
     func clearAmounts() {
         amountInDollars = ""

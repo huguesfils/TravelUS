@@ -21,11 +21,17 @@ struct CurrencyView: View {
                                 viewModel.clearAmounts()
                             })
                             .keyboardType(.decimalPad)
+                            .onChange(of: viewModel.amountInDollars) { _ in
+                                            viewModel.formatInput()
+                                        }
                         } else {
                             TextFieldSectionView(label: "Euros", placeholder: "Saisir montant", text: $viewModel.amountInEuros, clearAction: {
                                 viewModel.clearAmounts()
                             })
                             .keyboardType(.decimalPad)
+                            .onChange(of: viewModel.amountInEuros) { _ in
+                                            viewModel.formatInput()
+                                        }
                         }
                         
                         DividerWithButtonView(color: .naturalGreen, isRotated: $viewModel.isRotated, action: {
@@ -37,12 +43,18 @@ struct CurrencyView: View {
                                 viewModel.clearAmounts()
                             })
                             .keyboardType(.decimalPad)
+                            .onChange(of: viewModel.amountInEuros) { _ in
+                                            viewModel.formatInput()
+                                        }
                             .padding(.bottom)
                         } else {
                             TextFieldSectionView(label: "Dollars", placeholder: "Saisir montant", text: $viewModel.amountInDollars, clearAction: {
                                 viewModel.clearAmounts()
                             })
                             .keyboardType(.decimalPad)
+                            .onChange(of: viewModel.amountInDollars) { _ in
+                                            viewModel.formatInput()
+                                        }
                             .padding(.bottom)
                         }
                     }
