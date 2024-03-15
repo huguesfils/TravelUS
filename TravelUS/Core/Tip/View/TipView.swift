@@ -21,7 +21,7 @@ struct TipView: View {
                         TextFieldSectionView(label: "Montant de la facture", placeholder: "Saisir montant", text: $viewModel.billAmount, clearAction: {
                             viewModel.billAmount = ""
                         })
-                        .keyboardType(.numberPad)
+                        .keyboardType(.decimalPad)
                         
                         Picker("Pourcentage du pourboire", selection: $viewModel.tipPercentage) {
                             ForEach(tipPercentages, id: \.self) { percentage in

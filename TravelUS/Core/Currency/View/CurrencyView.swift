@@ -20,12 +20,12 @@ struct CurrencyView: View {
                             TextFieldSectionView(label: "Dollars", placeholder: "Saisir montant", text: $viewModel.amountInDollars, clearAction: {
                                 viewModel.clearAmounts()
                             })
-                            .keyboardType(.numberPad)
+                            .keyboardType(.decimalPad)
                         } else {
                             TextFieldSectionView(label: "Euros", placeholder: "Saisir montant", text: $viewModel.amountInEuros, clearAction: {
                                 viewModel.clearAmounts()
                             })
-                            .keyboardType(.numberPad)
+                            .keyboardType(.decimalPad)
                         }
                         
                         DividerWithButtonView(color: .naturalGreen, isRotated: $viewModel.isRotated, action: {
@@ -36,13 +36,13 @@ struct CurrencyView: View {
                             TextFieldSectionView(label: "Euros", placeholder: "Saisir montant", text: $viewModel.amountInEuros, clearAction: {
                                 viewModel.clearAmounts()
                             })
-                            .keyboardType(.numberPad)
+                            .keyboardType(.decimalPad)
                             .padding(.bottom)
                         } else {
                             TextFieldSectionView(label: "Dollars", placeholder: "Saisir montant", text: $viewModel.amountInDollars, clearAction: {
                                 viewModel.clearAmounts()
                             })
-                            .keyboardType(.numberPad)
+                            .keyboardType(.decimalPad)
                             .padding(.bottom)
                         }
                     }

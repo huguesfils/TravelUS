@@ -18,16 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LauncScreenIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uqi-IP-HIB">
-                                <rect key="frame" x="31" y="221" width="331" height="411"/>
+                                <rect key="frame" x="-93" y="119" width="580" height="614"/>
+                                <color key="backgroundColor" name="LaunchScreenColor"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" name="LaunchScreenColor"/>
+                        <color key="tintColor" name="LaunchScreenColor"/>
                         <constraints>
-                            <constraint firstItem="uqi-IP-HIB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="31" id="HAJ-gC-WBj"/>
-                            <constraint firstItem="uqi-IP-HIB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="162" id="cqA-kK-Dh4"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="uqi-IP-HIB" secondAttribute="trailing" constant="31" id="nly-zf-zR3"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="uqi-IP-HIB" secondAttribute="bottom" constant="186" id="qZy-vY-hHM"/>
+                            <constraint firstItem="uqi-IP-HIB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="60" id="3T2-mU-s2E"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="uqi-IP-HIB" secondAttribute="bottom" constant="85" id="E5L-cb-v31"/>
+                            <constraint firstAttribute="trailing" secondItem="uqi-IP-HIB" secondAttribute="trailing" constant="-94" id="ajE-bB-hrL"/>
+                            <constraint firstItem="uqi-IP-HIB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-93" id="bcF-5y-zzD"/>
                         </constraints>
                     </view>
                 </viewController>
