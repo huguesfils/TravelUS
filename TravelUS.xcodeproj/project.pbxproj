@@ -26,6 +26,7 @@
 		BB90C2B72B8E37B6008A7286 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2B62B8E37B6008A7286 /* CurrencyView.swift */; };
 		BB90C2BC2B8E386A008A7286 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2BB2B8E386A008A7286 /* TipView.swift */; };
 		BB90C2BE2B8E4EDA008A7286 /* DividerWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2BD2B8E4EDA008A7286 /* DividerWithButtonView.swift */; };
+		BB9C4BEF2BA4C02800FEBB81 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9C4BEE2BA4C02800FEBB81 /* Launch Screen.storyboard */; };
 		BBA9A4392B98D76600E375EC /* TextFieldSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */; };
 		BBC42FB92B97808700FA4321 /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */; };
 		BBC42FBD2B978D0700FA4321 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC42FBC2B978D0700FA4321 /* TranslationService.swift */; };
@@ -64,6 +65,7 @@
 		BB90C2B62B8E37B6008A7286 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 		BB90C2BB2B8E386A008A7286 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		BB90C2BD2B8E4EDA008A7286 /* DividerWithButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerWithButtonView.swift; sourceTree = "<group>"; };
+		BB9C4BEE2BA4C02800FEBB81 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSectionView.swift; sourceTree = "<group>"; };
 		BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
 		BBC42FBC2B978D0700FA4321 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		BB90C2722B8E024B008A7286 = {
 			isa = PBXGroup;
 			children = (
+				BB9C4BEE2BA4C02800FEBB81 /* Launch Screen.storyboard */,
 				BB90C27D2B8E024B008A7286 /* TravelUS */,
 				BB90C28F2B8E024C008A7286 /* TravelUSTests */,
 				BB90C27C2B8E024B008A7286 /* Products */,
@@ -353,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB9C4BEF2BA4C02800FEBB81 /* Launch Screen.storyboard in Resources */,
 				BB90C2872B8E024C008A7286 /* Preview Assets.xcassets in Resources */,
 				BB90C2832B8E024C008A7286 /* Assets.xcassets in Resources */,
 			);
@@ -553,6 +557,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -597,6 +602,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
