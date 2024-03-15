@@ -69,7 +69,6 @@
 		BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSectionView.swift; sourceTree = "<group>"; };
 		BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
 		BBC42FBC2B978D0700FA4321 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
-		BBD4F5472BA1FCF0008BCB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +92,6 @@
 		BB90C2722B8E024B008A7286 = {
 			isa = PBXGroup;
 			children = (
-				BB9C4BEE2BA4C02800FEBB81 /* Launch Screen.storyboard */,
 				BB90C27D2B8E024B008A7286 /* TravelUS */,
 				BB90C28F2B8E024C008A7286 /* TravelUSTests */,
 				BB90C27C2B8E024B008A7286 /* Products */,
@@ -112,7 +110,6 @@
 		BB90C27D2B8E024B008A7286 /* TravelUS */ = {
 			isa = PBXGroup;
 			children = (
-				BBD4F5472BA1FCF0008BCB61 /* Info.plist */,
 				BBD4F5482BA1FEB3008BCB61 /* SupportingFiles */,
 				BB90C2B22B8E36B6008A7286 /* App */,
 				BB90C2A92B8E25DB008A7286 /* Root */,
@@ -270,6 +267,7 @@
 		BBD4F5482BA1FEB3008BCB61 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				BB9C4BEE2BA4C02800FEBB81 /* Launch Screen.storyboard */,
 				BB90C2822B8E024C008A7286 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
