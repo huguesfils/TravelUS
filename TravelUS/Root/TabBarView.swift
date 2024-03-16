@@ -12,11 +12,11 @@ struct TabBarView: View {
         TabView {
             TranslateView()
                 .tabItem {
-                    Label("Traduction", systemImage: "captions.bubble")
+                    Label("Traduire", systemImage: "captions.bubble")
                 }
             CurrencyView()
                 .tabItem {
-                    Label("Conversion", systemImage: "dollarsign.arrow.circlepath")
+                    Label("Convertir", systemImage: "dollarsign.arrow.circlepath")
                 }
             TipView()
                 .tabItem {
