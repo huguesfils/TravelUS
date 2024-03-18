@@ -1,4 +1,4 @@
-# TravelUS
+# TravelUS (SwiftUI)
 
 Welcome to **TravelUS**, your ultimate companion for making trips to the USA more enjoyable and hassle-free. TravelUS brings together essential tools for travelers including a translator, a dollar-euro currency converter, and a tip calculator, all in one intuitive and user-friendly application.
 
