@@ -332,11 +332,11 @@
 			};
 			buildConfigurationList = BB90C2762B8E024B008A7286 /* Build configuration list for PBXProject "TravelUS" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = fr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				fr,
 			);
 			mainGroup = BB90C2722B8E024B008A7286;
 			productRefGroup = BB90C27C2B8E024B008A7286 /* Products */;
