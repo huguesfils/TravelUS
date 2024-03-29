@@ -19,7 +19,8 @@ struct TextFieldSectionView: View {
                 .foregroundStyle(Color.accentColor)
                 .padding([.horizontal, .top])
                 .font(.subheadline)
-            TextField(placeholder, text: $text)
+            TextField(placeholder, text: $text,  axis: .vertical)
+                .lineLimit(5)
                 .padding()
                 .padding(.bottom, 30)
                 .font(.title2)
@@ -31,6 +32,7 @@ struct TextFieldSectionView: View {
                                 Image(systemName: "multiply.circle.fill")
                                     .foregroundColor(Color.gray)
                                     .padding(.bottom, 25)
+                                    .padding(.leading, 10)
                                     .padding(.trailing, 8)
                             }
                             .transition(.scale)
