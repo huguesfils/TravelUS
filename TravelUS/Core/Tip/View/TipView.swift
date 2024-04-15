@@ -11,7 +11,7 @@ struct TipView: View {
     @StateObject var viewModel = TipViewModel()
     
     private let tipPercentages = [10, 15, 18, 20]
-
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -28,25 +28,30 @@ struct TipView: View {
                                 Text("\(percentage)%")
                             }
                         }
-                        .pickerStyle(.segmented)
+                        .pickerStyle(SegmentedPickerStyle())
                         .colorMultiply(.terracotta)
                         .padding()
-
-                        HStack {
-                            Text("Pourboire: ") .fontWeight(.semibold)
-                            Spacer()
-                            Text(String(format: "$%.2f", viewModel.tipValue)) .fontWeight(.bold)
-                               
-                        }
-                        .padding()
-
-                        HStack {
-                            Text("Total avec pourboire: ") .fontWeight(.semibold)
-                            Spacer()
-                            Text(String(format: "$%.2f", viewModel.totalWithTip)) .fontWeight(.bold)
-                        }
-                        .padding()
                         
+                        VStack {
+                            HStack {
+                                Text("Pourboire: ") .fontWeight(.semibold)
+                                Spacer()
+                                Text(String(format: "$%.2f", viewModel.tipValue)) .fontWeight(.bold)
+                                
+                            }
+                            .padding()
+                            
+                            
+                            HStack {
+                                Text("Total avec pourboire: ") .fontWeight(.semibold)
+                                Spacer()
+                                Text(String(format: "$%.2f", viewModel.totalWithTip)) .fontWeight(.bold)
+                            }
+                            .padding()
+                        }
+//                        .onTapGesture {
+//                            hideKeyboard()
+//                        }
                     }
                     .background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color.white))
                     .padding(.horizontal)
@@ -56,9 +61,7 @@ struct TipView: View {
                 }
             }
             .navigationTitle("Calcul du pourboire")
-            .onTapGesture {
-                hideKeyboard()
-            }
+            .gesture(DragGesture().onChanged{_ in UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)})
         }
     }
 }
