@@ -41,7 +41,6 @@ struct TipView: View {
                             }
                             .padding()
                             
-                            
                             HStack {
                                 Text("Total avec pourboire: ") .fontWeight(.semibold)
                                 Spacer()
@@ -49,9 +48,6 @@ struct TipView: View {
                             }
                             .padding()
                         }
-//                        .onTapGesture {
-//                            hideKeyboard()
-//                        }
                     }
                     .background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color.white))
                     .padding(.horizontal)
