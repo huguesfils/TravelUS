@@ -14,7 +14,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Traduire", systemImage: "captions.bubble")
                 }
-            CurrencyView()
+            CurrencyView(viewModel: .init(fetchCurrencyUseCase: CurrencyInjector.fetchCurrencyUseCase()))
                 .tabItem {
                     Label("Convertir", systemImage: "dollarsign.arrow.circlepath")
                 }

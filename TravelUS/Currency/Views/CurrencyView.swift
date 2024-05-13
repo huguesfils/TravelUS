@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrencyView: View {
-    @ObservedObject var viewModel = CurrencyViewModel()
+    @ObservedObject var viewModel: CurrencyViewModel
     
     var body: some View {
         NavigationStack {
@@ -19,7 +19,7 @@ struct CurrencyView: View {
                         if viewModel.isDollarFirst {
                             TextFieldSectionView(label: "Dollars", placeholder: "Saisir montant", text: $viewModel.amountInDollars, clearAction: {
                                 viewModel.clearAmounts()
-                            })
+                            }, isDisabled: false)
                             .keyboardType(.decimalPad)
                             .onChange(of: viewModel.amountInDollars) { _ in
                                             viewModel.formatInput()
@@ -27,7 +27,7 @@ struct CurrencyView: View {
                         } else {
                             TextFieldSectionView(label: "Euros", placeholder: "Saisir montant", text: $viewModel.amountInEuros, clearAction: {
                                 viewModel.clearAmounts()
-                            })
+                            }, isDisabled: false)
                             .keyboardType(.decimalPad)
                             .onChange(of: viewModel.amountInEuros) { _ in
                                             viewModel.formatInput()
@@ -39,18 +39,18 @@ struct CurrencyView: View {
                         })
                         
                         if viewModel.isDollarFirst {
-                            TextFieldSectionView(label: "Euros", placeholder: "Saisir montant", text: $viewModel.amountInEuros, clearAction: {
+                            TextFieldSectionView(label: "Euros", placeholder: "", text: $viewModel.amountInEuros, clearAction: {
                                 viewModel.clearAmounts()
-                            })
+                            }, isDisabled: true)
                             .keyboardType(.decimalPad)
                             .onChange(of: viewModel.amountInEuros) { _ in
                                             viewModel.formatInput()
                                         }
                             .padding(.bottom)
                         } else {
-                            TextFieldSectionView(label: "Dollars", placeholder: "Saisir montant", text: $viewModel.amountInDollars, clearAction: {
+                            TextFieldSectionView(label: "Dollars", placeholder: "", text: $viewModel.amountInDollars, clearAction: {
                                 viewModel.clearAmounts()
-                            })
+                            }, isDisabled: true)
                             .keyboardType(.decimalPad)
                             .onChange(of: viewModel.amountInDollars) { _ in
                                             viewModel.formatInput()
@@ -68,14 +68,23 @@ struct CurrencyView: View {
             .navigationTitle("Convertir")
         }
         .gesture(DragGesture().onChanged{_ in UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)})
-
         .onTapGesture {
             hideKeyboard()
+        }
+        .task {
+            await viewModel.viewDidLoad()
         }
     }
 }
 
 
 #Preview {
-    CurrencyView()
+//    struct f: FetchCurrencyUseCase {
+//        func execute() async -> Result<Currency, DomainError> {
+//            return .success(.init(base: "0.5", rates: ["Eur": 1]))
+//        }
+//    }
+//    
+//   return
+    CurrencyView(viewModel: .init(fetchCurrencyUseCase: CurrencyInjector.fetchCurrencyUseCase()))
 }

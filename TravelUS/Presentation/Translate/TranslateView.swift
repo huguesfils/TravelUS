@@ -16,6 +16,7 @@ struct TranslateView: View {
                 Color("SkyBlue").ignoresSafeArea()
                 VStack(alignment: .leading) {
                     VStack {
+                        
                         if viewModel.isFrenchFirst {
                             TextFieldSectionView(label: "Français", placeholder: "Saisissez votre texte", text: $viewModel.frenchText, clearAction: {
                                 viewModel.frenchText = ""
