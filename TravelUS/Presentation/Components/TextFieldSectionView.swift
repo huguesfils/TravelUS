@@ -12,6 +12,7 @@ struct TextFieldSectionView: View {
     var placeholder: String
     @Binding var text: String
     var clearAction: () -> Void
+    var isDisabled: Bool = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -25,6 +26,7 @@ struct TextFieldSectionView: View {
                 .padding(.bottom, 30)
                 .font(.title2)
                 .fontWeight(.bold)
+                .disabled(isDisabled)
                 .overlay(
                     Group {
                         if !text.isEmpty {

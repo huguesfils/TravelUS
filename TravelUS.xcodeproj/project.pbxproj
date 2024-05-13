@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0399522BEE6C20007E77E7 /* TranslateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0399512BEE6C20007E77E7 /* TranslateText.swift */; };
+		BB0399542BEE6EC7007E77E7 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0399532BEE6EC7007E77E7 /* Language.swift */; };
 		BB0BEB182BA0D72A00E38EDA /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */; };
 		BB0BEB1A2BA0E1FB00E38EDA /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */; };
 		BB70916D2BA34F1F00F044F2 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7091692BA34F1F00F044F2 /* URLSessionFake.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB0399512BEE6C20007E77E7 /* TranslateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateText.swift; sourceTree = "<group>"; };
+		BB0399532BEE6EC7007E77E7 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
 		BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		BB7091692BA34F1F00F044F2 /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
@@ -89,6 +93,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB03994F2BEE6890007E77E7 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				BB0399512BEE6C20007E77E7 /* TranslateText.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		BB0399502BEE68B3007E77E7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C2A92B8E25DB008A7286 /* Root */,
+				BB90C2AD2B8E363D008A7286 /* Translate */,
+				BB90C2B32B8E3793008A7286 /* Currency */,
+				BB90C2B82B8E3854008A7286 /* Tip */,
+				BBC42FBA2B97828F00FA4321 /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BB0399552BEE6FA1007E77E7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB90C27E2B8E024B008A7286 /* TravelUSApp.swift */,
+				BB9C4BEE2BA4C02800FEBB81 /* Launch Screen.storyboard */,
+				BB90C2822B8E024C008A7286 /* Assets.xcassets */,
+				BB90C2842B8E024C008A7286 /* TravelUS.entitlements */,
+				BB90C2852B8E024C008A7286 /* Preview Content */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BB0399562BEE6FB9007E77E7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */,
+				BBC42FBC2B978D0700FA4321 /* TranslationService.swift */,
+				BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		BB90C2722B8E024B008A7286 = {
 			isa = PBXGroup;
 			children = (
@@ -110,13 +156,10 @@
 		BB90C27D2B8E024B008A7286 /* TravelUS */ = {
 			isa = PBXGroup;
 			children = (
+				BB0399552BEE6FA1007E77E7 /* Core */,
 				BBA7EA912BED8A7B001F9A2A /* Domain */,
-				BBD4F5482BA1FEB3008BCB61 /* SupportingFiles */,
-				BB90C2B22B8E36B6008A7286 /* App */,
-				BB90C2A92B8E25DB008A7286 /* Root */,
-				BB90C2AC2B8E362F008A7286 /* Core */,
-				BB90C2842B8E024C008A7286 /* TravelUS.entitlements */,
-				BB90C2852B8E024C008A7286 /* Preview Content */,
+				BB0399502BEE68B3007E77E7 /* Presentation */,
+				BB0399562BEE6FB9007E77E7 /* Data */,
 			);
 			path = TravelUS;
 			sourceTree = "<group>";
@@ -150,49 +193,13 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		BB90C2AC2B8E362F008A7286 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				BB90C2AD2B8E363D008A7286 /* Translate */,
-				BB90C2B32B8E3793008A7286 /* Currency */,
-				BB90C2B82B8E3854008A7286 /* Tip */,
-				BBC42FBB2B978CE500FA4321 /* Model */,
-				BBC42FBA2B97828F00FA4321 /* Components */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		BB90C2AD2B8E363D008A7286 /* Translate */ = {
 			isa = PBXGroup;
 			children = (
-				BB90C2AE2B8E3652008A7286 /* View */,
-				BB90C2B12B8E368F008A7286 /* ViewModel */,
-			);
-			path = Translate;
-			sourceTree = "<group>";
-		};
-		BB90C2AE2B8E3652008A7286 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				BB90C2AF2B8E3661008A7286 /* TranslateView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BB90C2B12B8E368F008A7286 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
 				BBC42FB82B97808700FA4321 /* TranslateViewModel.swift */,
 			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		BB90C2B22B8E36B6008A7286 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				BB90C27E2B8E024B008A7286 /* TravelUSApp.swift */,
-			);
-			path = App;
+			path = Translate;
 			sourceTree = "<group>";
 		};
 		BB90C2B32B8E3793008A7286 /* Currency */ = {
@@ -249,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				BBA7EA922BED8A82001F9A2A /* Model */,
+				BB03994F2BEE6890007E77E7 /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 		BBA7EA922BED8A82001F9A2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB0399532BEE6EC7007E77E7 /* Language.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,25 +277,6 @@
 				BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		BBC42FBB2B978CE500FA4321 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BB86F1CA2B9A0A8600F0D087 /* CurrencyService.swift */,
-				BBC42FBC2B978D0700FA4321 /* TranslationService.swift */,
-				BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BBD4F5482BA1FEB3008BCB61 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				BB9C4BEE2BA4C02800FEBB81 /* Launch Screen.storyboard */,
-				BB90C2822B8E024C008A7286 /* Assets.xcassets */,
-			);
-			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,12 +383,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0BEB182BA0D72A00E38EDA /* TipViewModel.swift in Sources */,
+				BB0399522BEE6C20007E77E7 /* TranslateText.swift in Sources */,
 				BB90C2812B8E024B008A7286 /* ContentView.swift in Sources */,
 				BB896F612B9F5DD60035D78D /* CurrencyViewModel.swift in Sources */,
 				BB90C2BE2B8E4EDA008A7286 /* DividerWithButtonView.swift in Sources */,
 				BB90C2B72B8E37B6008A7286 /* CurrencyView.swift in Sources */,
 				BB896F682B9F91240035D78D /* HideKeybordViewExtension.swift in Sources */,
 				BB90C2BC2B8E386A008A7286 /* TipView.swift in Sources */,
+				BB0399542BEE6EC7007E77E7 /* Language.swift in Sources */,
 				BBA9A4392B98D76600E375EC /* TextFieldSectionView.swift in Sources */,
 				BB86F1CB2B9A0A8600F0D087 /* CurrencyService.swift in Sources */,
 				BB90C2AB2B8E25F4008A7286 /* TabBarView.swift in Sources */,
@@ -553,11 +545,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = TravelUS/TravelUS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"TravelUS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/TravelUS/Core/Preview Content\"";
 				DEVELOPMENT_TEAM = RT62BPUMZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -598,11 +590,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = TravelUS/TravelUS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"TravelUS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/TravelUS/Core/Preview Content\"";
 				DEVELOPMENT_TEAM = RT62BPUMZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
