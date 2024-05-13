@@ -89,3 +89,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 TravelUS/Core/Model/ApiKeys.swift
+TravelUS/Data/ApiKeys.swift
