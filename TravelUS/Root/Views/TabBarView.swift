@@ -10,8 +10,8 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
-            TranslateView()
-                .tabItem {
+            TranslateView(viewModel: .init(fetchTranslationUseCase: TranslationInjector.fetchTranslationUseCase()))
+                           .tabItem {
                     Label("Traduire", systemImage: "captions.bubble")
                 }
             CurrencyView(viewModel: .init(fetchCurrencyUseCase: CurrencyInjector.fetchCurrencyUseCase()))
