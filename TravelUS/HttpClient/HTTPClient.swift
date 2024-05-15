@@ -28,6 +28,12 @@ struct DefaultHTTPClient: HTTPClient {
             request.httpBody = try? JSONSerialization.data(withJSONObject: bodyParameters, options: [])
         }
         
+        if let headers = pathType.headers {
+            for (key, value) in headers {
+                request.addValue(value, forHTTPHeaderField: key)
+            }
+        }
+        
         do {
             let (data, response) = try await session.data(for: request)
             if let httpResponse = response as? HTTPURLResponse {

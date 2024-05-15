@@ -37,12 +37,16 @@ struct TranslationHttpPathType: HTTPPathType {
     }
     
     var bodyParameters: [String : Any]? {
-        let params = ["q": text, "target": targetLang, "format": "text", "source": sourceLang, "key": APIKeys.translationApiKey]
+        let params = ["q": text, "source": sourceLang, "target": targetLang, "format": "text"]
         print("Request body parameters: \(params)")
         return params
     }
     
     var urlParameters: [String : Any]? {
         return nil
+    }
+    
+    var headers: [String: String]? {
+        return ["Authorization": "Bearer \(APIKeys.translationApiKey)"]
     }
 }

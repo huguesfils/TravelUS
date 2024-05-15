@@ -23,5 +23,7 @@ public protocol HTTPPathType {
     
     /// url parameters passed in HTTP Request
     var urlParameters: [String: Any]? { get }
+    
+    var headers: [String: String]? { get }
 }
 

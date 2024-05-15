@@ -41,6 +41,10 @@ struct CurrencyHttpPathType: HTTPPathType {
     var urlParameters: [String : Any]? {
         return nil
     }
+    
+    var headers: [String : String]? {
+        return nil
+    }
 }
 
 extension HTTPError {
