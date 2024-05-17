@@ -8,5 +8,5 @@
 import Foundation
 
 struct Translation {
-    var translatedText: String
+  var translatedText: String
 }

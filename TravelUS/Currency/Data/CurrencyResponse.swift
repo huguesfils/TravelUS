@@ -8,12 +8,12 @@
 import Foundation
 
 struct CurrencyResponse: Decodable {
-    var base: String
-    var rates: [String: Double]
+  var base: String
+  var rates: [String: Double]
 }
 
 extension CurrencyResponse {
-    func toDomain() -> Currency{
-        return .init(base: self.base, rates: self.rates)
-    }
+  func toDomain() -> Currency {
+    return .init(base: self.base, rates: self.rates)
+  }
 }

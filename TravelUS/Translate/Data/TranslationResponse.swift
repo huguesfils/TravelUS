@@ -8,19 +8,19 @@
 import Foundation
 
 struct TranslationResponse: Decodable {
-    var data: TranslationData?
+  var data: TranslationData?
 }
 
 struct TranslationData: Decodable {
-    var translations: [Translations]
+  var translations: [Translations]
 }
 
 struct Translations: Decodable {
-    var translatedText: String
+  var translatedText: String
 }
 
 extension TranslationResponse {
-    func toDomain() -> String {
-        return data?.translations.first?.translatedText ?? ""
-    }
+  func toDomain() -> String {
+    return data?.translations.first?.translatedText ?? ""
+  }
 }

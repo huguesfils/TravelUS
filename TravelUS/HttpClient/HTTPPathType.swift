@@ -8,22 +8,21 @@
 import Foundation
 
 public enum HTTPUrlMethod: String {
-    case get, post, delete, patch, put
+  case get, post, delete, patch, put
 }
 
 public protocol HTTPPathType {
-    /// The path URL
-    var path: String { get }
+  /// The path URL
+  var path: String { get }
 
-    /// The HTTP method used in the request.
-    var method: HTTPUrlMethod { get }
-    
-    /// body parameters passed in HTTP Request
-    var bodyParameters: [String: Any]? { get }
-    
-    /// url parameters passed in HTTP Request
-    var urlParameters: [String: Any]? { get }
-    
-    var headers: [String: String]? { get }
+  /// The HTTP method used in the request.
+  var method: HTTPUrlMethod { get }
+
+  /// body parameters passed in HTTP Request
+  var bodyParameters: [String: Any]? { get }
+
+  /// url parameters passed in HTTP Request
+  var urlParameters: [String: Any]? { get }
+
+  var headers: [String: String]? { get }
 }
-

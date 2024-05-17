@@ -8,6 +8,6 @@
 import Foundation
 
 struct Currency {
-    var base: String
-    var rates: [String: Double]
+  var base: String
+  var rates: [String: Double]
 }

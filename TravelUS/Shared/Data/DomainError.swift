@@ -8,9 +8,9 @@
 import Foundation
 
 public enum DomainError: Error {
-    case error(code: Int, message: String)
-    case unAuthorized
-    case noNetwork
-    case serverNotAvailable
-    case unknown
+  case error(code: Int, message: String)
+  case unAuthorized
+  case noNetwork
+  case serverNotAvailable
+  case unknown
 }

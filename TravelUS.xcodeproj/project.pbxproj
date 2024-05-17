@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB0399542BEE6EC7007E77E7 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0399532BEE6EC7007E77E7 /* Language.swift */; };
+		BB0658F82BF7A4C400F35552 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BB0658F72BF7A4C400F35552 /* .swiftlint.yml */; };
 		BB0BEB182BA0D72A00E38EDA /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */; };
 		BB0BEB1A2BA0E1FB00E38EDA /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */; };
 		BB70916D2BA34F1F00F044F2 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7091692BA34F1F00F044F2 /* URLSessionFake.swift */; };
@@ -16,7 +17,7 @@
 		BB7091702BA34F1F00F044F2 /* TranslationServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70916C2BA34F1F00F044F2 /* TranslationServiceTestCase.swift */; };
 		BB86F1CB2B9A0A8600F0D087 /* CurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86F1CA2B9A0A8600F0D087 /* CurrencyRepository.swift */; };
 		BB896F612B9F5DD60035D78D /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */; };
-		BB896F682B9F91240035D78D /* HideKeybordViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */; };
+		BB896F682B9F91240035D78D /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB896F672B9F91240035D78D /* View++.swift */; };
 		BB90C27F2B8E024B008A7286 /* TravelUSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C27E2B8E024B008A7286 /* TravelUSApp.swift */; };
 		BB90C2812B8E024B008A7286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90C2802B8E024B008A7286 /* ContentView.swift */; };
 		BB90C2832B8E024C008A7286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90C2822B8E024C008A7286 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		BB0399532BEE6EC7007E77E7 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		BB0658F72BF7A4C400F35552 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = TravelUS/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		BB0BEB172BA0D72A00E38EDA /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
 		BB0BEB192BA0E1FB00E38EDA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		BB7091692BA34F1F00F044F2 /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		BB70916C2BA34F1F00F044F2 /* TranslationServiceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationServiceTestCase.swift; sourceTree = "<group>"; };
 		BB86F1CA2B9A0A8600F0D087 /* CurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepository.swift; sourceTree = "<group>"; };
 		BB896F602B9F5DD60035D78D /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
-		BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeybordViewExtension.swift; sourceTree = "<group>"; };
+		BB896F672B9F91240035D78D /* View++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View++.swift"; sourceTree = "<group>"; };
 		BB90C27B2B8E024B008A7286 /* TravelUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB90C27E2B8E024B008A7286 /* TravelUSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelUSApp.swift; sourceTree = "<group>"; };
 		BB90C2802B8E024B008A7286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		BB356FFA2BF76BAD007638F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB896F672B9F91240035D78D /* View++.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BB90C2722B8E024B008A7286 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 		BB90C27D2B8E024B008A7286 /* TravelUS */ = {
 			isa = PBXGroup;
 			children = (
+				BB0658F72BF7A4C400F35552 /* .swiftlint.yml */,
 				BBF2D50B2BF27078002001B6 /* HttpClient */,
 				BB0399552BEE6FA1007E77E7 /* Core */,
 				BBA326512BF4C5B000EB98FE /* Root */,
@@ -272,6 +283,7 @@
 		BBA326562BF4EC6D00EB98FE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BB356FFA2BF76BAD007638F0 /* Extensions */,
 				BBA326582BF4ED1400EB98FE /* Data */,
 				BBA326572BF4EC7F00EB98FE /* Views */,
 			);
@@ -283,7 +295,6 @@
 			children = (
 				BB90C2BD2B8E4EDA008A7286 /* DividerWithButtonView.swift */,
 				BBA9A4382B98D76600E375EC /* TextFieldSectionView.swift */,
-				BB896F672B9F91240035D78D /* HideKeybordViewExtension.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -401,6 +412,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB0658F62BF7A28100F35552 /* PBXTargetDependency */,
 			);
 			name = TravelUS;
 			productName = AnAmericanDream;
@@ -453,6 +465,11 @@
 				fr,
 			);
 			mainGroup = BB90C2722B8E024B008A7286;
+			packageReferences = (
+				BB356FFB2BF79348007638F0 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				BB356FFF2BF79E1F007638F0 /* XCRemoteSwiftPackageReference "swift-format" */,
+				BB3570012BF7A03D007638F0 /* XCRemoteSwiftPackageReference "swift-syntax" */,
+			);
 			productRefGroup = BB90C27C2B8E024B008A7286 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -468,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0658F82BF7A4C400F35552 /* .swiftlint.yml in Resources */,
 				BB9C4BEF2BA4C02800FEBB81 /* Launch Screen.storyboard in Resources */,
 				BB90C2872B8E024C008A7286 /* Preview Assets.xcassets in Resources */,
 				BB90C2832B8E024C008A7286 /* Assets.xcassets in Resources */,
@@ -502,7 +520,7 @@
 				BB90C2BE2B8E4EDA008A7286 /* DividerWithButtonView.swift in Sources */,
 				BBF2D5082BF26F4B002001B6 /* CurrencyResponse.swift in Sources */,
 				BB90C2B72B8E37B6008A7286 /* CurrencyView.swift in Sources */,
-				BB896F682B9F91240035D78D /* HideKeybordViewExtension.swift in Sources */,
+				BB896F682B9F91240035D78D /* View++.swift in Sources */,
 				BB90C2BC2B8E386A008A7286 /* TipView.swift in Sources */,
 				BB0399542BEE6EC7007E77E7 /* Language.swift in Sources */,
 				BBF2D5112BF271AA002001B6 /* HTTPError.swift in Sources */,
@@ -535,6 +553,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BB0658F62BF7A28100F35552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BB0658F52BF7A28100F35552 /* SwiftLintBuildToolPlugin */;
+		};
 		BB90C28E2B8E024C008A7286 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB90C27A2B8E024B008A7286 /* TravelUS */;
@@ -830,6 +852,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB356FFB2BF79348007638F0 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+		BB356FFF2BF79E1F007638F0 /* XCRemoteSwiftPackageReference "swift-format" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-format.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 510.1.0;
+			};
+		};
+		BB3570012BF7A03D007638F0 /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-syntax.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 510.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB0658F52BF7A28100F35552 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB356FFB2BF79348007638F0 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB90C2732B8E024B008A7286 /* Project object */;
 }

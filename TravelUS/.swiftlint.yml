@@ -1,0 +1,14 @@
+disabled_rules: # désactiver certaines règles
+  - trailing_whitespace
+  - colon
+  - comma
+  - opening_brace
+  - trailing_comma
+opt_in_rules: # activer certaines règles
+  - empty_count
+  - explicit_init
+included: # inclure des chemins spécifiques
+  - Source
+excluded: # exclure des chemins spécifiques
+  - Carthage
+  - Pods

@@ -6,6 +6,7 @@
 //
 
 enum Language: String, CaseIterable, Identifiable {
-    case french = "fr", english = "en"
-    var id: Self { self }
+  case french = "fr"
+  case english = "en"
+  var id: Self { self }
 }

@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct TravelUSApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.colorScheme, .light)
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environment(\.colorScheme, .light)
     }
+  }
 }

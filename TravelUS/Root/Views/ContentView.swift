@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        TabBarView()
-    }
+  var body: some View {
+    TabBarView()
+  }
 }
 
-
 #Preview {
-    ContentView()
+  ContentView()
 }
