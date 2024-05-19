@@ -32,7 +32,7 @@ struct TextFieldSectionView: View {
             if !text.isEmpty {
               Button(action: clearAction) {
                 Image(systemName: "multiply.circle.fill")
-                  .foregroundColor(Color.gray)
+                  .foregroundStyle(Color.gray)
                   .padding(.bottom, 25)
                   .padding(.leading, 10)
                   .padding(.trailing, 8)

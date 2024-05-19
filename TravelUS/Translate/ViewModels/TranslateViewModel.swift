@@ -8,10 +8,21 @@
 import Combine
 import Foundation
 
+struct TranslationDisplay {
+  let label: String
+  let placeholder: String
+  let language: Language
+}
+
 class TranslateViewModel: ObservableObject {
-  @Published var frenchText: String = ""
-  @Published var englishText: String = ""
-  @Published var isFrenchFirst = true
+  @Published var initialText: TranslationDisplay = .init(
+    label: "Français", placeholder: "Saisissez votre texte", language: .french)
+  @Published var translatedText: TranslationDisplay = .init(
+    label: "English", placeholder: "Enter text", language: .english)
+
+  @Published var initialTextValue = ""
+  @Published var translatedTextValue = ""
+
   @Published var isRotated = false
 
   private var cancellables = Set<AnyCancellable>()
@@ -25,45 +36,40 @@ class TranslateViewModel: ObservableObject {
     setupTranslationBindings()
   }
 
-  private func setupTranslationBindings() {
-    $frenchText
-      .dropFirst()
-      .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
-      .removeDuplicates()
-      .sink { [weak self] newValue in
-        guard let self = self, !newValue.isEmpty, self.isFrenchFirst else { return }
-        print("Translating from French to English: \(newValue)")
-        self.translate(text: newValue, from: .french, to: .english)
-      }
-      .store(in: &cancellables)
+  func rotated() {
+    let initial = initialText
+    let translated = translatedText
+    initialText = translated
+    translatedText = initial
+    initialTextValue = translatedTextValue
+  }
 
-    $englishText
+  func clearTextFields() {
+    initialTextValue = ""
+    translatedTextValue = ""
+  }
+
+  private func setupTranslationBindings() {
+    $initialTextValue
       .dropFirst()
       .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
       .removeDuplicates()
       .sink { [weak self] newValue in
-        guard let self = self, !newValue.isEmpty, !self.isFrenchFirst else { return }
-        print("Translating from English to French: \(newValue)")
-        self.translate(text: newValue, from: .english, to: .french)
+        guard let self = self else { return }
+        self.translate(
+          text: newValue, from: self.initialText.language, to: self.translatedText.language)
       }
       .store(in: &cancellables)
   }
 
   private func translate(text: String, from sourceLang: Language, to targetLang: Language) {
     Task {
-      print(
-        "Starting translation task: \(text) from \(sourceLang.rawValue) to \(targetLang.rawValue)")
       let result = await fetchTranslationUseCase.execute(
         text: text, from: sourceLang, to: targetLang)
       switch result {
       case .success(let translatedText):
-        print("Translation success: \(translatedText)")
         DispatchQueue.main.async {
-          if sourceLang == .french {
-            self.englishText = translatedText
-          } else {
-            self.frenchText = translatedText
-          }
+          self.translatedTextValue = translatedText
         }
       case .failure(let error):
         print("Translation error: \(error)")

@@ -16,48 +16,25 @@ struct TranslateView: View {
         Color("SkyBlue").ignoresSafeArea()
         VStack(alignment: .leading) {
           VStack {
-            if viewModel.isFrenchFirst {
-              TextFieldSectionView(
-                label: "Français", placeholder: "Saisissez votre texte",
-                text: $viewModel.frenchText,
-                clearAction: {
-                  viewModel.frenchText = ""
-                  viewModel.englishText = ""
-                }, isDisabled: false)
-            } else {
-              TextFieldSectionView(
-                label: "English", placeholder: "Enter text", text: $viewModel.englishText,
-                clearAction: {
-                  viewModel.englishText = ""
-                  viewModel.frenchText = ""
-                }, isDisabled: false)
-            }
+            textFieldSectionView(
+              translation: viewModel.initialText, isDisabled: false,
+              value: $viewModel.initialTextValue
+            )
 
             DividerWithButtonView(
               color: .skyBlue, isRotated: $viewModel.isRotated,
               action: {
                 withAnimation {
-                  viewModel.isFrenchFirst.toggle()
+                  viewModel.rotated()
                 }
               })
 
-            if viewModel.isFrenchFirst {
-              TextFieldSectionView(
-                label: "English", placeholder: "", text: $viewModel.englishText,
-                clearAction: {
-                  viewModel.englishText = ""
-                  viewModel.frenchText = ""
-                }, isDisabled: true)
-            } else {
-              TextFieldSectionView(
-                label: "Français", placeholder: "", text: $viewModel.frenchText,
-                clearAction: {
-                  viewModel.frenchText = ""
-                  viewModel.englishText = ""
-                }, isDisabled: true)
-            }
+            textFieldSectionView(
+              translation: viewModel.translatedText, isDisabled: true,
+              value: $viewModel.translatedTextValue
+            )
           }
-          .background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color.white))
+          .background(RoundedRectangle(cornerRadius: 10).foregroundStyle(.white))
           .padding(.horizontal)
           .padding(.top, 20)
 
@@ -73,8 +50,20 @@ struct TranslateView: View {
       viewModel.viewDidLoad()
     }
   }
+  @ViewBuilder
+  private func textFieldSectionView(
+    translation: TranslationDisplay, isDisabled: Bool, value: Binding<String>
+  ) -> some View {
+    TextFieldSectionView(
+      label: translation.label, placeholder: isDisabled ? "" : translation.placeholder, text: value,
+      clearAction: {
+        viewModel.clearTextFields()
+      }, isDisabled: isDisabled
+    )
+  }
 }
 
-// #Preview {
-//    TranslateView()
-// }
+#Preview {
+  TranslateView(
+    viewModel: .init(fetchTranslationUseCase: TranslationInjector.fetchTranslationUseCase()))
+}

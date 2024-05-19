@@ -54,7 +54,8 @@ class CurrencyViewModel: ObservableObject {
     let result = resultCurrency
     convertCurrency = result
     resultCurrency = converted
-    clearAmounts()
+    convertCurrencyValue = resultCurrencyValue
+
   }
 
   func amountChange(_ value: String) {

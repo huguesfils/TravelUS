@@ -36,7 +36,10 @@ struct CurrencyView: View {
             .padding(.bottom)
 
           }
-          .background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color.white))
+          .background(
+            RoundedRectangle(cornerRadius: 10)
+              .foregroundStyle(.white)
+          )
           .padding(.horizontal)
           .padding(.top, 20)
 

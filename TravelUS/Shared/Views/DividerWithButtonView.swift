@@ -24,10 +24,10 @@ struct DividerWithButtonView: View {
 
       Circle()
         .frame(width: 30, height: 30)
-        .foregroundColor(color)
+        .foregroundStyle(color)
         .overlay(
           Image(systemName: "arrow.triangle.swap")
-            .foregroundColor(.terracotta)
+            .foregroundStyle(.terracotta)
             .rotation3DEffect(
               .degrees(isRotated ? 180 : 0),
               axis: (x: 1.0, y: 0.0, z: 0.0)
